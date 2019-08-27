@@ -1,0 +1,33 @@
+{
+    "name": "Markdown Editor",
+    "description" : "Base on Vditor",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "app.png"
+    },
+    "options_page": "options.html",
+    "icons": {
+      "128": "app.png"
+    },
+    "web_accessible_resources": [
+      "editor/index.classic.css"
+    ],
+    "chrome_url_override": {
+      "pageToOverride": "page.html"
+    },
+    "permissions": ["<all_urls>","file:///*","management","tabs","activeTab","declarativeContent","storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+F",
+            "mac": "MacCtrl+Shift+F"
+          },
+          "description": "Opens Editor"
+        }
+    }
+  }
