@@ -1,7 +1,7 @@
 {
     "name": "Markdown Editor",
     "description" : "Base on Vditor",
-    "version": "1.0",
+    "version": "0.0.1.0",
     "manifest_version": 2,
     "browser_action": {
       "default_icon": "app.png"
